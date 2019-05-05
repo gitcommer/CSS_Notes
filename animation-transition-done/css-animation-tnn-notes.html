@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basket Example</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<img src="images/cloud.jpg">
+		<div class="circle">Hover Me</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+<!--MOVE OBJECT------------------------------------------->
+
+<style>
+	body{
+	text-align: center;
+	}
+	.wrapper{
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.circle{
+		width: 100px;
+		padding: 50px 0;
+		line-height: 0;
+		margin: 60px auto;
+		background: pink;
+		color: white;
+		border-radius: 50px;
+		cursor: pointer;
+	}
+	img{
+		/*
+		//TRANSFORM or move the object
+
+		transform: translateX(200px); //-200px, translateY
+		or
+		transform: translateX(-200px, 200px); //-200px(x), 200px(y)
+		
+		-----------------------------------------------------------
+
+		//streth or shrink the object
+		transform: scaleX(0.5); //1 is default size
+		transform: scale(3); //scale x and y
+		transform: scale(3, 0.5); //3(x) and 0.5(y)
+
+		-----------------------------------------------------------
+
+		//rotate the object
+		transform: rotate(90deg); //mura ra siyag height and width
+		transform: rotate(-90deg); //this will rotate the image
+		transform: scale(3, 0.5); //3(x) and 0.5(y)
+		transform: rotateZ(180deg 0r -45deg) //this will rotate the image
+
+		-----------------------------------------------------------
+
+		//merge
+		transform: rotateZ(-90deg) translateY(200px) scale(2);
+		*/
+	}
+</style>
+
+
+
+
+<!--ANIMATIONS------------------------------------------->
+
+<style>
+	body{
+		text-align: center;
+	}
+	.wrapper{
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.circle{
+		width: 100px;
+		padding: 50px 0;
+		line-height: 0;
+		margin: 60px auto;
+		background: pink;
+		color: white;
+		border-radius: 50px;
+		cursor: pointer;
+
+		transition: 1s; /*control "all" property for 1s*/
+		/*or you can merge*/
+		transition: background 1s, transform 0.3s; /*- "specific" iyang i run
+													 - 1s ang gikusgon sa background and 0.3s ang gikusgon sa transform
+													 - naa sa hover ilang data*/
+
+		/*
+		USING (DELAY)
+		- 1s is the delay
+		- meaning run first the background then after 1s run the transform ---
+		- linear - meaning half half lang dili pass pass or hinay ang transition naa sa tonga
+		- ease-in or ease-out or ease - hinay then mo pass pass ang transition
+		*/
+		transition: background 1s, transform 0.3s 1s ease-in;
+	}
+	.circle:hover{ /*inig ka hover kay dungan ni og run tanan*/
+		background: salmon;
+		transform: rotate(360deg); 
+	}
+</style>

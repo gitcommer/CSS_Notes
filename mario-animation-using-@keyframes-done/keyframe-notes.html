@@ -1,0 +1,67 @@
+
+
+
+
+
+<!--SAMPLE 1---------------------------->
+
+<style>
+	.mario{
+	  position: absolute;
+	  top: -40px;
+	  left: 0px;
+	  animation-name: drive; /*this will call ang run the keyframes*/
+	  animation-duration: 3s; 
+	}
+
+	@keyframes drive{
+	  from{transform: translateX(0)}
+	  to{transform: translateX(200px)}
+	}
+</style>
+
+
+
+<!--SAMPLE 2---------------------------->
+
+<style>
+	.mario{
+	  position: absolute;
+	  top: -40px;
+	  left: 0px;
+	  animation-name: drive; /*this will call ang run the keyframes*/
+	  animation-duration: 3s; 
+	  animation-fill-mode: forwards; /*mo stop ang object sa last dili mobalik sa una*/
+	  /*OR*/
+	  animation-fill-mode: forwards or backwards or both;
+	  animation-delay: 2s; /*mo stop sa ang object og 2sec una mo run*/
+	}
+
+	@keyframes drive{
+	  from{transform: translateX(0)}
+	  to{transform: translateX(200px)}
+	}
+</style>
+
+
+
+<!--SAMPLE 3---------------------------->
+
+<style>
+	.mario{
+	  position: absolute;
+	  top: -40px;
+	  left: 0px;
+	  animation-name: drive; /*this will call ang run the keyframes*/
+	  animation-duration: 3s; 
+	  animation-fill-mode: forwards; /*mo stop ang object sa last dili mobalik sa una*/
+	  /*OR*/
+	  animation-fill-mode: forwards or backwards or both;
+	  animation-delay: 2s; /*mo stop sa ang object og 2sec una mo run*/
+	}
+
+	@keyframes drive{
+	  from{transform: translateX(0)}
+	  to{transform: translateX(200px)}
+	}
+</style>

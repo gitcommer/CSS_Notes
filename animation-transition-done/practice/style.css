@@ -1,0 +1,37 @@
+body{
+	text-align: center;
+}
+.wrapper{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.circle{
+	width: 100px;
+	padding: 50px 0;
+	line-height: 0;
+	margin: 60px auto;
+	background: pink;
+	color: white;
+	border-radius: 50px;
+	cursor: pointer;
+
+	/*transition: 1s;*/ /*control "all" property for 1s*/
+	/*or you can merge*/
+	transition: background 1s, transform 0.3s; /*- "specific" iyang i run
+												 - 1s ang gikusgon sa background and 0.3s ang gikusgon sa transform
+												 - naa sa hover ilang data*/
+
+	/*
+	USING (DELAY)
+	- 1s is the delay
+	- meaning run first the background then after 1s run the transform ---
+	- linear - meaning half half lang dili pass pass or hinay ang transition naa sa tonga
+	- ease-in or ease-out or ease - hinay then mo pass pass ang transition
+	*/
+	/*transition: background 1s, transform 0.3s 1s ease-in;*/
+}
+.circle:hover{ /*inig ka hover kay dungan ni og run tanan*/
+	background: salmon;
+	transform: rotate(360deg); 
+}
