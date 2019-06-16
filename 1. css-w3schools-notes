@@ -1,4 +1,5 @@
 CSS RESPONSIVE - done and understand
+CSS GRID
 
 
 
@@ -6,3 +7,21 @@ CSS RESPONSIVE - done and understand
 CSS RESPONSIVE
 **************
 - https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s
+
+CSS GRID
+********
+grid-area or grid template - https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named
+
+display: grid;                            - like indices
+display: inline-grid;                     - 1 col na naay grid sa sulod
+grid-template-columns: auto auto auto;    - 3 col with 4 col inside each
+
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+grid-gap: 50px 100px;                     - gap for col and row
+
+grid-column-start: 1;                     - unsa gilapdon ang col
+grid-column-end: 3;
+
+grid-row-start: 1;                        - unsa gilapdon ang row
+grid-row-end: 3;
