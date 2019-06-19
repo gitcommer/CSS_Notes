@@ -1,1 +1,19 @@
-Flex
+display: flex                                 - container of row and col
+         flex-direction: column;              - display div in 1 col
+         flex-direction: column-reverse;      - display div in 1 col as 3 2 1
+         flex-direction: row;                 - display div in 1 row
+         flex-direction: row-reverse;         - display div in 1 row as 3 2 1
+         flex-wrap                            - inline-block
+         flex-wrap: nowrap;                   - block same of flex-direction: row
+         flex-wrap: wrap-reverse;             - same sa inline block pero greater number from right
+         flex-flow: row wrap;                 - same as inline-block 1 row 2 row 3 row if mapuno na ang row
+         
+         
+         The justify-content Property
+         
+         
+         flex-flow                            - 
+         justify-content                      - 
+         align-items                          - 
+         align-content                        - 
+
