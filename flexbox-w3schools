@@ -7,13 +7,19 @@ display: flex                                 - container of row and col
          flex-wrap: nowrap;                   - block same of flex-direction: row
          flex-wrap: wrap-reverse;             - same sa inline block pero greater number from right
          flex-flow: row wrap;                 - same as inline-block 1 row 2 row 3 row if mapuno na ang row
-         
-         
-         The justify-content Property
-         
-         
          flex-flow                            - 
-         justify-content                      - 
-         align-items                          - 
+         justify-content: center;             - center div
+         justify-content: flex-start;         - float-left
+         justify-content: flex-start;         - float-right
+         justify-content: space-around;       - space before, between, and after
+         justify-content: space-between;      - space between
+         align-items: center;                 - center div in height
+         align-items: flex-start;             - position-top
+         align-items: flex-end;               - position-bottom
+         align-items: stretch;                - sa as add height on a div
+          align-items: baseline;              - tupong tanan content in bottom like h1, p
          align-content                        - 
+         
+         
+         The align-content Property
 
