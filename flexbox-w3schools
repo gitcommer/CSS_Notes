@@ -8,18 +8,26 @@ display: flex                                 - container of row and col
          flex-wrap: wrap-reverse;             - same sa inline block pero greater number from right
          flex-flow: row wrap;                 - same as inline-block 1 row 2 row 3 row if mapuno na ang row
          flex-flow                            - 
+         
          justify-content: center;             - center div
          justify-content: flex-start;         - float-left
          justify-content: flex-start;         - float-right
          justify-content: space-around;       - space before, between, and after
          justify-content: space-between;      - space between
+         
          align-items: center;                 - center div in height
          align-items: flex-start;             - position-top
          align-items: flex-end;               - position-bottom
          align-items: stretch;                - sa as add height on a div
-          align-items: baseline;              - tupong tanan content in bottom like h1, p
-         align-content                        - 
+         align-items: baseline;               - tupong tanan content in bottom like h1, p
+         
+         align-content: space-between;        - space or padding siya sa tonga sa doha ka row 
+         align-content: space-around;         - padding or margin top and bottom sa row
+         align-content: stretch;              - height siya sa div in a row
+         align-content: center;               - i center tanan div from top and bottom
+         align-content: flex-start;           - naa sa top tanan div of 2 rows
+         align-content: flex-end;             - naa sa bottom tanan div of 2 rows
          
          
-         The align-content Property
+         Perfect Centering
 
